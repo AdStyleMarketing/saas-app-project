@@ -9,7 +9,7 @@ module ApplicationHelper
       type = :success if type == :notice
       type = :danger  if type == :alert
       type = :danger  if type == :error
-      next unless ALERT_TYPES.include?(type)
+
 
       tag_class = options.extract!(:class)[:class]
       tag_options = {
